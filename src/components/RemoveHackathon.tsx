@@ -17,7 +17,7 @@ const RemoveHackathon = ({id}:any) => {
     }
   };
   return (
-    <button onClick={removeTopic} className="  bg-red-500 p-3">
+    <button onClick={removeTopic} className="  bg-red-500 p-3 rounded-lg hover:bg-red-700 ml-2">
     delete
   </button>
   )
