@@ -22,20 +22,20 @@ const Page = () => {
   const { data: session }: any = useSession();
 
   const [currentUser, setCurrentUser] = useState();
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await getData();
-        if (data) {
-          setHackathons(data.hackathons);
-        }
-      } catch (error) {
-        console.error("Error fetching hackathons: ", error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const data = await getData();
+  //       if (data) {
+  //         setHackathons(data.hackathons);
+  //       }
+  //     } catch (error) {
+  //       console.error("Error fetching hackathons: ", error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   useEffect(() => {
     const fetchCurrentUserData = async () => {
